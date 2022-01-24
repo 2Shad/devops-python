@@ -27,28 +27,28 @@ print(third * 3)
 
 ### Strings!
 
-# single = 'String in single quotes'
-# single = "String in single quotes"
+single = 'String in single quotes'
+single = "String in single quotes"
 
 # failure = 'This is David's string'
 
-# single_in_double = "This is David's string"
-# double_in_single = 'This is a "string"'
-# both = 'This is David\'s "string"'
+single_in_double = "This is David's string"
+double_in_single = 'This is a "string"'
+both = 'This is David\'s "string"'
 
 
 ### Indexing and slicing
 
-# hi = 'Hello World!'
-# print(hi[0])  # Python starts counting at zero!
-# print(hi[6])
-# print(hi[-1])
-# print(hi[0:6])  # From 0 to 6 (non inclusive ending)
+hi = 'Hello World!'
+print(hi[0])  # Python starts counting at zero!
+print(hi[6])
+print(hi[-1])
+print(hi[0:6])  # From 0 to 6 (non inclusive ending)
 
-# print(len(hi))
+print(len(hi))
 
-# # print 'lo Wo'
-# print(hi[3:8])
+# print 'lo Wo'
+print(hi[3:8])
 
 
 ### Methods
