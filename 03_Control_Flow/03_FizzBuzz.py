@@ -13,14 +13,17 @@
 # Can we get those from player input?
 # Can we input alternate words for fizz and buzz?
 
-
+# Asks user for start and end point
 start = input('Please input a start number: ')
 end = input('Please input an end number: ')
 
-if start.isdigit()() or end.isdigit():
+# checks if user given values are digits
+if start.isdigit() or end.isdigit():
     fizz = 'fizz'
     buzz = 'buzz'
-    response = input('do you want to customize the words fizzbuzz? (y/n): ').lower()
+    # asks user if he wants to change fizzbuzz
+    response = input('do you want to customize the words fizzbuzz? (y/N): ').lower()
+    # checks user's decision, and gives the option if he wants to mod the game, if the user is trying to break the code, it doesn't let him play the game
     if response not in ('y', 'n'):
         print('I assume that means you don\'t actually want to play')
     else:
@@ -28,8 +31,10 @@ if start.isdigit()() or end.isdigit():
             fizz = input('Please type what you want fizz to be: ')
             buzz = input('Please type what you want buzz to be: ')
 
+        # simple fizzbuzz concatenation just in case user modded the game
         fizzbuzz = fizz + buzz
 
+        # fizzbuzz game
         for number in range(int(start), int(end) + 1):
             if number % 15 == 0:
                 print(fizzbuzz)
@@ -40,5 +45,5 @@ if start.isdigit()() or end.isdigit():
             else:
                 print(number)
 else:
-    print('Please use sensible start and end point')
-    print('No FizzBuzz for you')
+    # message to user if user inputted inappropriate start and end point
+    print('\nPlease use sensible start and end point \nNo FizzBuzz for you')
