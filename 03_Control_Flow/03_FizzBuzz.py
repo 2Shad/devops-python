@@ -13,6 +13,7 @@
 # Can we get those from player input?
 # Can we input alternate words for fizz and buzz?
 prompt_start_end = True
+prompt_decision = True
 while prompt_start_end:
     # Asks user for start and end point
     start = input('Please input a start number: ')
@@ -23,17 +24,19 @@ while prompt_start_end:
         prompt_start_end = True
         fizz = 'fizz'
         buzz = 'buzz'
-        # asks user if he wants to change fizzbuzz
-        response = input('do you want to customize the words fizzbuzz? (y/N): ').lower()
-        # checks user's decision, and gives the option if he wants to mod the game, if the user is trying to break the code, it doesn't let him play the game
-        if response not in ('y', 'n'):
-            print('I assume that means you don\'t actually want to play')
-        else:
-            if response == 'y':
-                fizz = input('Please type what you want fizz to be: ')
-                buzz = input('Please type what you want buzz to be: ')
+        while prompt_decision:
+            # asks user if he wants to change fizzbuzz
+            response = input('do you want to customize the words fizzbuzz? (y/N): ').lower()
+            # checks user's decision, and gives the option if he wants to mod the game, if the user is trying to break the code, it doesn't let him play the game
+            if response not in ('y', 'n'):
+                print('\nPlease be decisive.\n')
+            else:
+                prompt_decision = False
+                if response == 'y':
+                    fizz = input('Please type what you want fizz to be: ')
+                    buzz = input('Please type what you want buzz to be: ')
 
-            # simple fizzbuzz concatenation just in case user modded the gamedsf
+            # simple fizzbuzz concatenation just in case user modded the user
             fizzbuzz = fizz + buzz
 
             # fizzbuzz game
@@ -48,4 +51,4 @@ while prompt_start_end:
                     print(number)
     else:
         # message to user if user inputted inappropriate start and end point
-        print('\nPlease use sensible start and end point')
+        print('\nPlease use sensible start and end point\n')
