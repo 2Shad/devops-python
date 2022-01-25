@@ -49,8 +49,8 @@ while prompt_start_end:
 
 fizz = 'fizz'
 buzz = 'buzz'
-        
-        
+
+
 while prompt_decision:
     # asks user if he wants to change fizzbuzz
     response = input('do you want to customize the words fizzbuzz? (y/N): ').lower()
