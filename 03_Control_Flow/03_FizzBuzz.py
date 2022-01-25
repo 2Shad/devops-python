@@ -16,6 +16,7 @@
 def ask_value(value):
     return input(f'What do you want the {value} to be?\n')
 
+
 def game(start, end, fizz, buzz):
     fizzbuzz = fizz + buzz
     for number in range(int(start), int(end) + 1):
@@ -27,7 +28,6 @@ def game(start, end, fizz, buzz):
             print(buzz)
         else:
             print(number)
-
 
 
 prompt_start_end = True
@@ -49,8 +49,7 @@ while prompt_start_end:
 
 fizz = 'fizz'
 buzz = 'buzz'
-
-
+       
 while prompt_decision:
     # asks user if he wants to change fizzbuzz
     response = input('do you want to customize the words fizzbuzz? (y/N): ').lower()
@@ -59,6 +58,7 @@ while prompt_decision:
         prompt_decision = False
     else:
         print('\nPlease be decisive.')
+
 if response == 'y':
     fizz = ask_value('fizz')
     buzz = ask_value('buzz')
