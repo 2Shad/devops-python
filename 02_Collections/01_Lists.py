@@ -72,3 +72,23 @@ print(len(list_in_tuple))
 
 list_in_tuple[0][-1] = 'SUCCESS'
 print(list_in_tuple)
+
+
+## Split
+
+text = 'It was the best of times'
+
+text_list = text.split(' ')
+print(text_list)
+
+csv = '112,34,32,2546,12354,456'
+csv_list = csv.split(',')
+print(csv_list)
+
+## Join
+
+print('_'.join(text_list))
+
+n = {1,2,3,4,5,6,9,8,7}
+n_sorted = sorted(n)
+print(n_sorted)

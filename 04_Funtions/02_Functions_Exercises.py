@@ -19,8 +19,14 @@ print("\nQ1b\n")
 # (bonus points if you call your previous function within this function
 
 # A1b:
+# def factors(num1, num2):
+#     if num1 % num2 == 0 or num2 % num1 == 0:
+#         return True
+#     else:
+#         return False
+
 def factors(num1, num2):
-    if num1 % num2 == 0 or num2 % num1 == 0:
+    if num1 in find_divisors(num2) or num2 in find_divisors(num1):
         return True
     else:
         return False

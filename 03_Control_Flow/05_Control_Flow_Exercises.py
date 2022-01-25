@@ -110,7 +110,7 @@ print("\nQ4b\n")
 
 # A4b:
 prime = True
-for i in range(2, round(int(number)/4)):
+for i in range(2, round(int(number ** 0.5))):
     if int(number) % i == 0:
         prime = False
         break

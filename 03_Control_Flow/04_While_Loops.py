@@ -33,7 +33,13 @@ while prompt_user:
         print('Please enter age in digits')
 print(f'Double of your age is {int(age) * 2}.')
 
+
+i = 1
+while True:
+    print()
+
 # try:
 #     age = int(input('What is your age?\n'))
 # except:
 #     print('Please enter age in digits')
+
