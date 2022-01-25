@@ -80,9 +80,9 @@ list_of_lists = [[1,5,7,3,44,4,1],
 
 # A3a:
 list_without_duplicates = []
-for list in list_of_lists:
-    if len(list) == len(set(list)):
-        list_without_duplicates.append(list)
+for clist in list_of_lists:
+    if len(clist) == len(set(clist)):
+        list_without_duplicates.append(clist)
 
 print(list_without_duplicates)
 
@@ -110,7 +110,7 @@ print("\nQ4b\n")
 
 # A4b:
 prime = True
-for i in range(2, round(int(number ** 0.5))):
+for i in range(2, int(number ** 0.5)):
     if int(number) % i == 0:
         prime = False
         break
