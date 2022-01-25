@@ -36,19 +36,19 @@ while prompt_start_end:
                     fizz = input('Please type what you want fizz to be: ')
                     buzz = input('Please type what you want buzz to be: ')
 
-            # simple fizzbuzz concatenation just in case user modded the user
-            fizzbuzz = fizz + buzz
+        # simple fizzbuzz concatenation just in case user modded the user
+        fizzbuzz = fizz + buzz
 
-            # fizzbuzz game
-            for number in range(int(start), int(end) + 1):
-                if number % 15 == 0:
-                    print(fizzbuzz)
-                elif number % 3 == 0:
-                    print(fizz)
-                elif number % 5 == 0:
-                    print(buzz)
-                else:
-                    print(number)
+        # fizzbuzz game
+        for number in range(int(start), int(end) + 1):
+            if number % 15 == 0:
+                print(fizzbuzz)
+            elif number % 3 == 0:
+                print(fizz)
+            elif number % 5 == 0:
+                print(buzz)
+            else:
+                print(number)
     else:
         # message to user if user inputted inappropriate start and end point
         print('\nPlease use sensible start and end point\n')
