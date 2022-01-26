@@ -31,6 +31,8 @@ class Car:
     def get_speed(self):
         return self.__current_speed
 
+variable = 1
+
 if __name__ == '__main__':
     bugatti = Car(70, 400)
     print(bugatti.get_speed())
