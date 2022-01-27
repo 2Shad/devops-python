@@ -75,6 +75,11 @@ print(f'Pi to 3dp: {pi:.3f}')
 print(f'Pi to 5dp: {pi:.5f}')
 print(f'Pi to 0dp: {pi:.0f}')
 
+print(f'Fixed point {pi:f}')
+print(f'Fixed point {pi:f}')
+print(f'Exponential form {pi:e}')
+
+
 score = 16
 max_score = 26
 print(f'You scored {score / max_score:.0%}')

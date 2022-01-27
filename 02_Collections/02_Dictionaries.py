@@ -12,35 +12,36 @@ table = {
     'width': 150
 }
 
-print(table)
-print(table['colour']) # DICTIONARY NAME [ KEY ]
 
-table['height'] = 125
-table['price'] = 99.99
-print(table)
+# print(table)
+# print(table['colour']) # DICTIONARY NAME [ KEY ]
 
-table.update({'price': 199.99, 'width': 180})
+# table['height'] = 125
+# table['price'] = 99.99
+# print(table)
 
-print(table.get('price'))
-print(table['price'])
+# table.update({'price': 199.99, 'width': 180})
+
+# print(table.get('price'))
+# print(table['price'])
 
 
-chairs = {
-    'Chair A': {
-        'name': 'chair A',
-        'colour': 'white',
-        'size': 'Adult'
-    },
-    'Chair B': {
-        'name': 'chair B',
-        'colour': 'red',
-        'size': 'Child'
-    }
-}
+# chairs = {
+#     'Chair A': {
+#         'name': 'chair A',
+#         'colour': 'white',
+#         'size': 'Adult'
+#     },
+#     'Chair B': {
+#         'name': 'chair B',
+#         'colour': 'red',
+#         'size': 'Child'
+#     }
+# }
 
-print(chairs.get('Chair A').get('colour'))
+# print(chairs.get('Chair A').get('colour'))
 
-print(table)
-print(table.keys())
-print(table.values())
-print(table.items())
+# print(table)
+# print(table.keys())
+# print(table.values())
+# print(table.items())
